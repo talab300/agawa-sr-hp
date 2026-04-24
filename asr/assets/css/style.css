@@ -384,18 +384,22 @@ h1, h2, h3, h4 { font-family: var(--f-serif); font-weight: 600; line-height: 1.4
 }
 .hero__visual-kanji {
   position: absolute;
+  display: block;
   font-family: var(--f-serif);
   font-weight: 500;
   color: rgba(212, 179, 122, 0.18);
   font-size: clamp(7rem, 20vw, 14rem);
-  line-height: 0.9;
-  letter-spacing: -0.05em;
+  line-height: 1;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
   text-orientation: upright;
+  -webkit-text-orientation: upright;
+  white-space: nowrap;
   user-select: none;
+  pointer-events: none;
 }
 .hero__visual-caption {
   position: absolute;
